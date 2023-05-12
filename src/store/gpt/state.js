@@ -1,7 +1,8 @@
 export default function () {
   return {
-    userMsg:"what is the last question",
+    userMsg:"Hello",
     assistantMsg: '',
-    API_KEY:'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'
+    userPromptImage: 'A painting of Iranian girl singing in the rain',
+    assistantImgUrl:''
   }
 }
