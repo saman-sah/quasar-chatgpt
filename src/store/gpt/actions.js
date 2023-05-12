@@ -1,5 +1,5 @@
 import axios from 'axios'
-const API_KEY='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'
+const API_KEY=''
 const axiosreq = axios.create({
   headers: { 'Authorization': 'Bearer ' + API_KEY,
   "Content-Type": "application/json" }
