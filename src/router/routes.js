@@ -5,7 +5,8 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Chat.vue') },
-      { path: '/images', component: () => import('pages/Image.vue') }
+      { path: '/images-generation', component: () => import('src/pages/ImageGeneration.vue') },
+      { path: '/images-variation', component: () => import('src/pages/ImageVariation.vue') }
     ]
   },
 

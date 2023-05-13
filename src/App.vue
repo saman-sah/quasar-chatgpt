@@ -13,8 +13,8 @@ export default defineComponent({
     }
   },
   mounted() {
-    this.getMessageAction();
-    this.getImageAction();
+    // this.getMessageAction();
+    // this.getImageAction();
   },
   methods: {
     ...mapActions('gpt',{

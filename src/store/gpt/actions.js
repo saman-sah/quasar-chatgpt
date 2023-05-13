@@ -39,3 +39,21 @@ export function getImageAction ({ commit, state }) {
       commit('SET_ASSISTANT_IMG', imgUrl)
   })
 }
+export function getImageVariation ({ commit, state }) {
+  const saman=fs.createReadStream('@/public/images/Saman.png');
+  console.log(saman);
+
+  let body= {
+    image: 'public/images/Saman.png',
+    n: 2,
+    size: "512x512"
+  }
+  axiosreq.post('https://api.openai.com/v1/images/variations ', body )
+  .then(response => {
+      console.log('response');
+      console.log(response);
+      // console.log(response.data.data.url);
+      // let imgUrls= response.data.data.url
+      // commit('SET_URLS_VARIATIONS', imgUrls)
+  })
+}
